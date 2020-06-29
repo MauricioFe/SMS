@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">SMS</string>
+    <string name="enviar">Enviar</string>
+    <string name="digite_o_numero_de_telefone">Digite o número de telefone</string>
+    <string name="Menssagem">Digite sua mensagem</string>
 </resources>

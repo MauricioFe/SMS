@@ -6,13 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edtNumeroTelefone"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_margin="8dp"
+        android:hint="@string/digite_o_numero_de_telefone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    <EditText
+        android:id="@+id/edtMenssagem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLength="160"
+        android:inputType="text"
+        android:hint="@string/Menssagem"
+        app:layout_constraintEnd_toEndOf="@+id/edtNumeroTelefone"
+        app:layout_constraintStart_toStartOf="@+id/edtNumeroTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/edtNumeroTelefone" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar"
+        android:onClick="enviarSmsClick"
+        app:layout_constraintEnd_toEndOf="@+id/edtMenssagem"
+        app:layout_constraintStart_toStartOf="@+id/edtMenssagem"
+        app:layout_constraintTop_toBottomOf="@+id/edtMenssagem"        />
 </androidx.constraintlayout.widget.ConstraintLayout>
